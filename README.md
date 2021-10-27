@@ -20,3 +20,20 @@ quasar build
 
 ### Customize the configuration
 See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+
+
+### DEPLOYING QUASAR
+
+-- Mac Electron
+quasar dev -m electron
+
+-- Windowns Electron
+quasar build -m electron
+obs:
+  Incluir:
+  packager: {
+    platform: 'win32'
+  },
+
+-- Android Cordova
+quasar dev -m cordova -T android
